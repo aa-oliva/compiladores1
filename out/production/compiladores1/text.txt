@@ -1,0 +1,26 @@
+COMPILER prueba
+
+CHARACTERS
+
+letter = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".
+digit = "0123456789".
+hexdigit = digit+"ABCDEF".
+cuadrado = CHR(25).
+tab = CHR(9).
+eol = CHR(10).
+blanco = eol + CHR(13)+ tab + CHR(32).
+
+KEYWORDS
+
+if="if".
+while="while".
+
+
+TOKENS
+id = letter{letter}.
+number = digit{digit}.
+hexnumber = hexdigit{hexdigit}"(H)".
+white = blanco{blanco}.
+
+
+END pruseba.
