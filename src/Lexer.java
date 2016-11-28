@@ -212,7 +212,7 @@ public class Lexer {
         cont  = cont-6;
         String cadena ="";
 
-        //lee hasta que encuentra keywords
+        //lee hasta que encuentra Tokens
         while (!expected.equals("TOKENS")){
             expected += archivo.substring(cont, cont+1);
             cont ++;

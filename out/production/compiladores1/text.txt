@@ -1,26 +1,23 @@
 COMPILER prueba
 
+
 CHARACTERS
 
-letter = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".
-digit = "0123456789".
-hexdigit = digit+"ABCDEF".
-cuadrado = CHR(25).
+letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".
+digit = "0123456789" .
 tab = CHR(9).
 eol = CHR(10).
-blanco = eol + CHR(13)+ tab + CHR(32).
+blanco = eol+CHR(13)+tab.
 
 KEYWORDS
 
-if="if".
-while="while".
-
+while = "while".
+do = "do".
 
 TOKENS
-id = letter{letter|digit} EXCEPT KEYWORDS.
-number = digit{digit}.
-hexnumber = hexdigit{hexdigit}"(H)".
-white = blanco{blanco}.
 
+ident = letter{letter|digit} EXCEPT KEYWORDS.
+number = digit{digit}.
+white = blanco{blanco}.
 
 END prueba.

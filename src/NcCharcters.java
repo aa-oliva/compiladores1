@@ -86,9 +86,7 @@ public class NcCharcters {
         if(parte.indexOf("CHR(")!=1){
             isCHR = true;
         }
-        else if(parte.indexOf("\'")!=1){
-            parte.replace("'","\"");
-        }
+
         else{
             isCHR = false;
         }
@@ -130,7 +128,7 @@ public class NcCharcters {
             //String
             if (isThisStriing(partesDeLaCadena[i])){
                 regex = ""; //Vacia el reges
-                System.out.println("Esta cadena es un string =D");
+                System.out.println("Esta cadena es un string ");
                 regex += partesDeLaCadena[i].replace("\"", "");
                 System.out.println("-> \'" + regex + "\'");
 
@@ -148,7 +146,7 @@ public class NcCharcters {
 
             //Ident
             else if (isThisIdent(partesDeLaCadena[i])){
-                System.out.println("Es un ident =D");
+                System.out.println("Es un ident");
 
                 /*Se busca entre todos los caracteres creados previamente y se agrega esto a la expresion regular*/
                 for(int ii=0; ii<charcterss.size();ii++){
@@ -165,21 +163,30 @@ public class NcCharcters {
             //Charr "CHR"
 
             else if(isthisCHR(partesDeLaCadena[i])){
-                System.out.println("Es un CHR");
+                if(partesDeLaCadena[i].substring(0,4).equals("CHR(")){
+                    System.out.println("Es un CHR");
 
-                System.out.println(partesDeLaCadena[i]);
-                hola=partesDeLaCadena[i];
-                System.out.println(hola);
-                hola = hola.replace("C","");
-                hola = hola.replace("H","");
-                hola = hola.replace("R","");
-                hola = hola.replace("(","");
-                hola = hola.replace(")","");
-                System.out.println("el nuermo : " + hola);
-                numero = Integer.parseInt(hola);
-                char c = (char)numero;
+                    System.out.println(partesDeLaCadena[i]);
+                    hola=partesDeLaCadena[i];
+                    System.out.println(hola);
+                    hola = hola.replace("C","");
+                    hola = hola.replace("H","");
+                    hola = hola.replace("R","");
+                    hola = hola.replace("(","");
+                    hola = hola.replace(")","");
+                    System.out.println("el nuermo : " + hola);
+                    numero = Integer.parseInt(hola);
+                    char c = (char)numero;
+                    regex2+=c;
+                }
+                else if(partesDeLaCadena[i].substring(0,1).equals("\'")){
+                    System.out.println("Es un CHAR \'");
+                    hola=partesDeLaCadena[i];
 
-                regex2+=c;
+                }
+
+
+
                 numero=0;
                 System.out.println(regex2);
             }

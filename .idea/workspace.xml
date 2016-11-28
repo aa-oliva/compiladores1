@@ -25,7 +25,7 @@
       <file leaf-file-name="ProgramaGenerado.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProgramaGenerado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="1089">
               <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -35,17 +35,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="text.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/text.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NcTokens.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="168" column="41" lean-forward="true" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
+              <folding>
+                <element signature="method#whitesPaceF#0;class#Lexer#0" expanded="false" />
+                <element signature="method#compilerf#0;class#Lexer#0" expanded="false" />
+                <element signature="method#nombref#0;class#Lexer#0" expanded="false" />
+                <element signature="method#charactersf#0;class#Lexer#0" expanded="false" />
+                <element signature="docComment;method#keyWordsf#0;class#Lexer#0" expanded="false" />
+                <element signature="method#endf#0;class#Lexer#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NcCharcters.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NcCharcters.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="183" column="45" lean-forward="false" selection-start-line="183" selection-start-column="45" selection-end-line="183" selection-end-column="45" />
+              <folding>
+                <element signature="e#7367#7368#0" expanded="true" />
+                <element signature="e#7396#7397#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NcTokens.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NcTokens.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -82,7 +112,6 @@
       <find>=D</find>
       <find>cade</find>
       <find>generarLaExpresionRegular</find>
-      <find>partesDeLaCadena</find>
       <find>separarLasPartes</find>
       <find>regex</find>
       <find>Utility.waitline();</find>
@@ -95,6 +124,8 @@
       <find>hol</find>
       <find>ho</find>
       <find>exceptKeywordFound</find>
+      <find>partesDeLaCadena</find>
+      <find>el nu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,17 +143,17 @@
         <option value="$PROJECT_DIR$/src/Utility.java" />
         <option value="$PROJECT_DIR$/src/NcKeywords.java" />
         <option value="$PROJECT_DIR$/src/SimuladorIdent.java" />
-        <option value="$PROJECT_DIR$/src/NcCharcters.java" />
         <option value="$PROJECT_DIR$/src/Automata/Generador_de_Automatas.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Automata/Printer.java" />
         <option value="$PROJECT_DIR$/src/Printer.java" />
-        <option value="$PROJECT_DIR$/src/Lexer.java" />
-        <option value="$PROJECT_DIR$/src/text.txt" />
         <option value="$PROJECT_DIR$/src/Automata/SimuladorAFN.java" />
         <option value="$PROJECT_DIR$/src/Automata/Automata.java" />
         <option value="$PROJECT_DIR$/src/ProgramaGenerado.java" />
         <option value="$PROJECT_DIR$/src/NcTokens.java" />
+        <option value="$PROJECT_DIR$/src/NcCharcters.java" />
+        <option value="$PROJECT_DIR$/src/Lexer.java" />
+        <option value="$PROJECT_DIR$/src/text.txt" />
       </list>
     </option>
   </component>
@@ -628,12 +659,12 @@
       <workItem from="1480099517214" duration="64118000" />
       <workItem from="1480284766518" duration="218000" />
       <workItem from="1480287273814" duration="20813000" />
-      <workItem from="1480317042944" duration="4932000" />
+      <workItem from="1480317042944" duration="8418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95788000" />
+    <option name="totallyTimeSpent" value="99274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -649,7 +680,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33762887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33762887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -846,14 +877,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Automata/Printer.java" />
-    <entry file="file://$PROJECT_DIR$/src/NcCharcters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="85" column="37" lean-forward="true" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Automata/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -874,21 +897,6 @@
         <state relative-caret-position="-662">
           <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="250" column="36" lean-forward="false" selection-start-line="250" selection-start-column="36" selection-end-line="250" selection-end-column="36" />
-          <folding>
-            <element signature="method#whitesPaceF#0;class#Lexer#0" expanded="false" />
-            <element signature="method#compilerf#0;class#Lexer#0" expanded="false" />
-            <element signature="method#nombref#0;class#Lexer#0" expanded="false" />
-            <element signature="method#charactersf#0;class#Lexer#0" expanded="false" />
-            <element signature="docComment;method#keyWordsf#0;class#Lexer#0" expanded="false" />
-            <element signature="method#endf#0;class#Lexer#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,6 +939,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NcTokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="144" column="38" lean-forward="true" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NcCharcters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="183" column="45" lean-forward="false" selection-start-line="183" selection-start-column="45" selection-end-line="183" selection-end-column="45" />
+          <folding>
+            <element signature="e#7367#7368#0" expanded="true" />
+            <element signature="e#7396#7397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -943,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProgramaGenerado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="1089">
           <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -952,18 +979,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/text.txt">
+    <entry file="file://$PROJECT_DIR$/src/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="49">
+          <caret line="168" column="41" lean-forward="true" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
+          <folding>
+            <element signature="method#whitesPaceF#0;class#Lexer#0" expanded="false" />
+            <element signature="method#compilerf#0;class#Lexer#0" expanded="false" />
+            <element signature="method#nombref#0;class#Lexer#0" expanded="false" />
+            <element signature="method#charactersf#0;class#Lexer#0" expanded="false" />
+            <element signature="docComment;method#keyWordsf#0;class#Lexer#0" expanded="false" />
+            <element signature="method#endf#0;class#Lexer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NcTokens.java">
+    <entry file="file://$PROJECT_DIR$/src/text.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="144" column="38" lean-forward="true" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
+        <state relative-caret-position="255">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
       </provider>
