@@ -5,6 +5,8 @@ import java.io.*;
 import java.lang.*;
 import javax.swing.JFileChooser;
 import java.io.File;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args){
 
@@ -54,5 +56,22 @@ public class Main {
         System.out.println( contenido );
 
        Lexer lexer = new Lexer(contenido);
+       crearProgamaGeneradoLexer(lexer.getnCharacters(), lexer.getnKeywords(), lexer.getnTokens());
+
+    }
+
+    private static void crearProgamaGeneradoLexer(ArrayList<NcCharcters> charcterss, ArrayList<NcKeywords> keywordss, ArrayList<NcTokens> tokens){
+        System.out.println("------------------------------------------------");
+        System.out.println("               Generando Programa               ");
+        System.out.println("------------------------------------------------");
+        ProgramaGenerado analizador_lexico = new ProgramaGenerado(charcterss,tokens, keywordss);
+        /*crea mis automatas*/
+        analizador_lexico.crearAtuomatas();
+        /*Se crean los analizadores lexicos para los automatas*/
+        analizador_lexico.crearSimuladores();
+
+        /*se probara si funciona*/
+        analizador_lexico.testing();
+
     }
 }

@@ -211,7 +211,6 @@ public class Lexer {
         cont = whereTokenStarts;
         cont  = cont-6;
         String cadena ="";
-        String regex = "";
 
         //lee hasta que encuentra keywords
         while (!expected.equals("TOKENS")){
@@ -220,7 +219,6 @@ public class Lexer {
 
         }
 
-        estadoProyecto = 2;
         System.out.println(cadena);
         while (!cadena.equals("END")){
             cadena = "";
@@ -230,7 +228,6 @@ public class Lexer {
                 cadena=cadena.trim();
 
                 if (cadena.equals("END")){
-                    //System.out.println(cadena);
                     break;
                 }
 
@@ -242,6 +239,7 @@ public class Lexer {
 
         System.out.println("\nSe agrega los Keywords a la clase\n");
 
+        //Se divide en nombre y lexema
         for (int i=0; i < lTokens.size(); i++){
             cadena=lTokens.get(i);
             int equal_position =  cadena.indexOf("=");
@@ -348,6 +346,30 @@ public class Lexer {
         }
     }
 
+    /*Getters y setters*/
 
+    public ArrayList<NcCharcters> getnCharacters() {
+        return nCharacters;
+    }
+
+    public void setnCharacters(ArrayList<NcCharcters> nCharacters) {
+        this.nCharacters = nCharacters;
+    }
+
+    public ArrayList<NcKeywords> getnKeywords() {
+        return nKeywords;
+    }
+
+    public void setnKeywords(ArrayList<NcKeywords> nKeywords) {
+        this.nKeywords = nKeywords;
+    }
+
+    public ArrayList<NcTokens> getnTokens() {
+        return nTokens;
+    }
+
+    public void setnTokens(ArrayList<NcTokens> nTokens) {
+        this.nTokens = nTokens;
+    }
 }
 

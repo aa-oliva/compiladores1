@@ -10,7 +10,7 @@ public class NcTokens {
     String comillas = "";
     String partesDeLaCadena [];
     ArrayList<String> simbolos = new ArrayList<>();
-    boolean comillasFound = false;
+    boolean exceptKey = false;
 
     //Constructor
     public NcTokens(ArrayList<NcTokens> tokens,ArrayList <NcCharcters> charcterss,String nombre, String lexema) {
@@ -18,6 +18,9 @@ public class NcTokens {
         this.nombre = nombre;
         this.lexema = lexema;
 
+        /*Encuentra si hay EXCEPT KEYWORDS, vuelve exceptKey true
+            y la saca de la cadena*/
+        exceptKey = checkForExceptKeywords(lexema);
         /*Despues de ingresar el nombre y lexema, se procede a identificar el token*/
         separarLasPartes(lexema);
         generaLaExpresionRegular(tokens, charcterss);
@@ -130,7 +133,7 @@ public class NcTokens {
                     System.out.println("--> Todavia hay simbolos disponibles para analizar");
                     System.out.println(simboloQueCorresponde);
                     if (simboloQueCorresponde.equals("{")) {
-                        regex2 += "(";
+                        regex2 += ")(";
 
                         System.out.println(regex2);
                     } else if (simboloQueCorresponde.equals("}")) {
@@ -153,10 +156,24 @@ public class NcTokens {
             }
         }
         System.out.println("regex: \'"+regex2+"\'");
-        this.regex=regex2;
+        this.regex="("+regex2;
     }
 
+    /**
+     * Este metodo revisa el lexema para ver si este contiene 'EXCEPT KEYWORDS'
+     * @param lexema
+     * @return
+     */
+    private boolean checkForExceptKeywords(String lexema){
+        boolean hasExceptKeywords = false;
 
+        if(lexema.contains("EXCEPTKEYWORDS")){
+            System.out.println("It has except keywords");
+            hasExceptKeywords = true;
+        }
+
+        return hasExceptKeywords;
+    }
 
     //Getters y Setters
 

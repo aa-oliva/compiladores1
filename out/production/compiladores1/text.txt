@@ -17,10 +17,10 @@ while="while".
 
 
 TOKENS
-id = letter{letter}.
+id = letter{letter|digit} EXCEPT KEYWORDS.
 number = digit{digit}.
 hexnumber = hexdigit{hexdigit}"(H)".
 white = blanco{blanco}.
 
 
-END pruseba.
+END prueba.
